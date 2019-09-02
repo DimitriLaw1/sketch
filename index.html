@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TheNetBerry</title>
+
+	
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="assets/js/script.js"></script>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link href='https://fonts.googleapis.com/css?family=Sofia' rel='stylesheet'>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	
+
+</head>
+<body>
+<!-- THIS PAGE IS WHEN THE SIGNED IN USER VISITS ANOTHER USER PROFILE!!!! -->
+
+
+
+
+	<!-- The first block of the page containing picture, name, etc and connect button -->
+	<div class="mastHeadNav">
+		<div class="mastHeadContainer">
+<div class="leftbox"> 
+<img style="height: 70px; margin-top: -9px; " alt="My logo" title="Business Logo" src="img/logogold.png"/>
+</div>
+<div class="centerbox searchBarContainer">
+	<div class="wrapperClose">
+	<form action="search.php" method="GET">
+      <input class="searchBar" type="text" placeholder="Search.." name="search">
+      <!--<button class="searchButton" type="submit"><i class="fa fa-search"></i></button> -->
+    </form>
+</div>
+</div>
+<div class="rightbox">
+	<a href="#">
+<img id="myBtn" style="width:30px; height: 30px;" alt="My logo" title="Inbox" src="img/message.png"/>
+</a>
+<a href="#">
+<img  style="width:30px; height: 30px;" alt="My logo" title="Notification" src="img/alert.png"/>
+</a>
+</div>
+		</div>
+
+
+	</div>  <!-- mast head ends here -->
+
+	<!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <p>Some text in the Modal..</p>
+  </div>
+
+</div>
+
+	<script>
+// Get the modal
+var modal = document.getElementById("myModal");
+
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks the button, open the modal 
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
+<div class="Container00 spacingDown"> 
+	<div class="box00">
+
+
+	<div class="leftbox">
+
+	<a class="iconpads" href="#">
+                <img style="width: 150px; height: 60px; min-width: 100px;" alt="My logo" title="Business Logo" src="img/verlogo.png"/>
+                <p class="wordsUnderIcon2"> <b>Founder</b> at <br> Versified Magazine </p>
+                
+              </a><!-- you can click on their business page, meaning they can LINK their business to their page -->
+	</div>
+
+	<div class="centerbox">
+		<img class="profilePicContainer center" style="width: 120px; height: 120px;" src="img/alex5.jpg">
+	</div>
+
+	<div class="rightbox"> 
+<a href="#">
+                <img style="width: 30px;" alt="Collaboration" src="img/more.png"/>
+               
+              </a>
+	</div>
+
+	</div><!-- END OF BOX DIV -->
+	<div id="text-for-under-pic">
+
+<p class="profile-name-text"> Alexus Brown  </p>
+	<p class="ig-name-title"> @alexusmbrown  </p>
+
+
+	<p class="profile-location-title"> Greensboro, NC </p>
+<p class="profile-name-title"> Model | Photographer  </p>
+
+
+<!-- ADD IN A BIO , so they can type whatever-->
+
+<div style="text-align: center;">
+	<button id="button1"> Connect</button>
+	<button id="button2"> Message</button>
+</div>
+<div style="width: 100%;"></div>
+</div>
+</div>
+
+<!-- ENDING: The first block of the page containing picture, name, etc and connect button.. ENDS -->
+
+<div class="Container00"> <!-- Beginning of New Block containing the friends/network -->
+	
+	<div class="box001">
+		
+<div class="leftbox"> 
+<p class="friends-num" > 781 </p>
+<p class="friends-text"> Network </p>
+</div>
+
+<div class="centerbox">
+	<p class="friends-num" > 10 </p>
+<p class="friends-text"> Posts </p>
+</div>
+
+<div class="rightbox">
+<p class="friends-num" > 233 </p>
+<p class="friends-text"> Mutual Connections </p>
+	</div>
+
+
+
+	</div> <!-- End of Box -->
+
+</div> <!--ENDING OF THE SECOND BOX CONTAINING NEWTORK, POST, MUTUAL -->
+
+<div class="barSeperation"> <!--Just a bar to seperate things --></div>
+
+
+<!-- Start of Box 3 Contaning Photo/ Portfolio -->
+<div class="Container00"> 
+<div>
+<h3 class="portfolio-title-text"> Alexus's Top 5 Greatest Works </h3>
+</div>
+
+<div class="Container00">
+	
+	<div style="text-align: center; margin-top: -10px;" class="scrollmenu" >
+
+ <a href="#">
+                <img alt="portfolio" style ="width:150px;height: 150px;"src="img/alex6.jpg"/><p><b>Tie Dye</b></p><h5 class="creditBlock"><b>Credit:</b> @NikonDon </h5>
+              </a>
+
+ <a href="#">
+                <img alt="portfolio" style ="width:150px;height: 150px;"src="img/alex2.jpg"/><p><b>Space Jam</b></p><h5 class="creditBlock"><b>Credit:</b> @NikonDon </h5>
+              </a>
+
+              <a href="#">
+                <img alt="portfolio" style ="width:150px;height: 150px;"src="img/alex1.jpg"/><p><b>Living Lavish</b></p><h5 class="creditBlock"><b>Credit:</b> @NikonDon </h5>
+              </a>
+
+              <a href="#">
+                <img alt="portfolio" style ="width:150px;height: 150px;"src="img/alex3.jpg"/><p><b>Pretty Girl Rock</b></p><h5 class="creditBlock"><b>Credit:</b> @NikonDon </h5>
+              </a>
+
+              <a href="#">
+                <img alt="portfolio" style ="width:150px;height: 150px; "src="img/alex4.jpg"/><p><b>Bad Gal Lex</b></p><h5 class="creditBlock"><b>Credit:</b> @NikonDon </h5>
+              </a>
+
+</div>
+
+</div>
+
+<div class="barSeperation"> <!--Just a bar to seperate things --></div>
+
+<div class="bottomNavBarContainer"> 
+<div class="bottomNavBox">
+<div class="navIconContainer">
+
+<div class="collabIcon">
+<a class="iconFull" href="#">
+                <img style="width: 30px;" alt="Collaboration" src="img/genre.png"/>
+                <p class="wordsUnderIcon"> Collaborate </p>
+              </a>
+</div>
+
+<div class="CreativesIcon">
+<a class="iconFull" href="discover.html">
+                <img style="width: 30px;" alt="Find Creatives" src="img/discover.png"/>
+                <p class="wordsUnderIcon">Find Creatives </p>
+              </a>
+</div>
+
+<div class="ProfileIcon">
+<a class="iconFull" href="#"> 
+                <img style="width: 30px;" alt="Profile" src="img/account.png"/>
+                <p class="wordsUnderIcon"> My Profile </p>
+              </a>
+</div>
+
+
+
+</div>
+</div>
+
+</div>
+
+<div class="hugespace"> </div>
+
+</body>
+</html>

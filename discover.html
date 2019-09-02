@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TheNetBerry</title>
+
+	
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="assets/js/script.js"></script>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link href='https://fonts.googleapis.com/css?family=Sofia' rel='stylesheet'>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	
+
+</head>
+<body>
+
+	<div class="mastHeadNav">
+		<div class="mastHeadContainer">
+<div class="leftbox"> 
+<img style="height: 70px; margin-top: -9px; " alt="My logo" title="Business Logo" src="img/logogold.png"/>
+</div>
+<div class="centerbox searchBarContainer">
+	<div class="wrapperClose">
+	<form action="search.php" method="GET">
+      <input class="searchBar" type="text" placeholder="Search.." name="search">
+      <!--<button class="searchButton" type="submit"><i class="fa fa-search"></i></button> -->
+    </form>
+</div>
+</div>
+<div class="rightbox">
+	<a href="#">
+<img id="myBtn" style="width:30px; height: 30px;" alt="My logo" title="Inbox" src="img/message.png"/>
+</a>
+<a href="#">
+<img style="width:30px; height: 30px;" alt="My logo" title="Notification" src="img/alert.png"/>
+</a>
+</div>
+		</div>
+
+
+	</div>  <!-- mast head ends here -->
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <p>Some text in the Modal..</p>
+  </div>
+
+</div>
+	
+<script>
+// Get the modal
+var modal = document.getElementById("myModal");
+
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks the button, open the modal 
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
+
+<!--
+
+CODE STARTS BELOW HERE
+-->
+<div class="Container00 spacingDown2"> 
+<div class="meetContainer">
+	<p class="meetTopText"> Meet New People  </p>
+	<div class="meetBox">
+		
+		<div class="genderMeet">
+			<!-- Drop down box of different genders - male or female -->
+			<p><b>Gender</b> </p>
+			<select name="GenderMeet">
+  <option value="Male">Male</option>
+  <option value="Female">Female</option>
+</select>
+		</div>
+
+		<div class="ageMeet">
+			<!-- Drop down box of age ranges 18-24 -->
+			<p><b> Ages</b> </p>
+			<select name="ageMeet">
+  <option value="15">15</option><option value="16">16</option><option value="17">17</option><option value="18">18</option><option value="19">19</option><option value="20">20</option><option value="21">21</option><option value="22">22</option><option value="23">23</option><option value="24">24</option><option value="25">25</option><option value="26">26</option><option value="27">28</option><option value="29">29</option><option value="30">30</option><option value="31">31</option><option value="32">32</option><option value="33">33</option><option value="34">34</option><option value="35">35</option><option value="36">36</option><option value="37">37</option><option value="38">38</option><option value="39">39</option><option value="40">40</option><option value="41">41</option><option value="42">42</option><option value="43">43</option><option value="44">44</option><option value="45">45</option><option value="46">46</option><option value="47">47</option><option value="48">48</option><option value="49">49</option><option value="50">50</option><option value="51">51</option><option value="52">52</option><option value="53">53</option><option value="54">54</option><option value="55">55</option>
+</select>
+
+<span> to </span>
+		<select name="ageMeet2">
+  <option value=""> <option value="15">15</option><option value="16">16</option><option value="17">17</option></option><option value="18">18</option><option value="19">19</option><option value="20">20</option><option value="21">21</option><option value="22">22</option><option value="23">23</option><option value="24">24</option><option value="25">25</option><option value="26">26</option><option value="27">28</option><option value="29">29</option><option value="30">30</option><option value="31">31</option><option value="32">32</option><option value="33">33</option><option value="34">34</option><option value="35">35</option><option value="36">36</option><option value="37">37</option><option value="38">38</option><option value="39">39</option><option value="40">40</option><option value="41">41</option><option value="42">42</option><option value="43">43</option><option value="44">44</option><option value="45">45</option><option value="46">46</option><option value="47">47</option><option value="48">48</option><option value="49">49</option><option value="50">50</option><option value="51">51</option><option value="52">52</option><option value="53">53</option><option value="54">54</option><option value="55">55</option>
+</select>
+
+		</div>
+
+		<div class="onlineOnly">
+			<!-- radio button box of online only users -->
+			<div style="padding-top: 7px; padding-bottom: 7px;">
+				<p><b> Users</b></p>
+			<input type="radio" name="sex" id="male" value="female" class="_15db" id="Female" >
+<span> Online Users Only </span>
+ </div>
+		</div>
+
+		<div class="occupationMeet">
+			<!-- Drop down box of different occupations -->
+			<p><b> Profession </b></p>
+			<select name="occupationMeet">
+  <option value="Modeling">Modeling</option><option value="Photography">Photography</option><option value="Videography">Videography</option><option value="Acting">Acting</option><option value="Jornalism">Journalism</option><option value="Entrepreneur">Entrepreneur</option><option value="Music Artist">Music Artist</option><option value="Designer">Designer</option><option value="Artist">Artist</option>
+</select>
+
+		</div>
+
+		<div class="locationMeet">
+			<p> <b>Location</b> </p>
+			<!-- Drop down box of different locations -->
+			<select aria-label="State" name="state_loc" id="state" title="State" id="state" class="_3az2 _6as5 __v4" data-sigil="state_loc" ><option value=""> </option><option value="Alabama">Alabama</option><option value="Alaska">Alaska</option><option value="Arizona">Arizona</option><option value="Arkansas">Arkansas</option><option value="California">California</option><option value="Colorado">Colorado</option><option value="Connecticut">Connecticut</option><option value="Delaware">Delaware</option><option value="Florida">Florida</option><option value="Georgia">Georgia</option><option value="Hawaii">Hawaii</option><option value="Idaho">Idaho</option><option value="Illinois">Illinois</option><option value="Indiana">Indiana</option><option value="Iowa">Iowa</option><option value="Kansas">Kansas</option><option value="Kentucky">Kentucky</option><option value="Louisiana">Louisiana</option><option value="Maine">Maine</option><option value="Maryland">Maryland</option><option value="Massachusetts">Massachusetts</option><option value="Michigan">Michigan</option><option value="Minnesota">Minnesota</option><option value="Mississippi" >Mississippi</option><option value="Missouri">Missouri</option><option value="Montana" >Montana</option><option value="Nebraska">Nebraska</option><option value="Nevada">Nevada</option><option value="New Hampshire">New Hampshire</option><option value="New Jersey">New Jersey</option><option value="New Mexico">New Mexico</option><option value="New York">New York</option><option value="North Carolina" >North Carolina</option><option value="North Dakota">North Dakota</option><option value="Ohio">Ohio</option><option value="Oklahoma">Oklahoma</option><option value="Oregon">Oregon</option><option value="Pennsylvania">Pennsylvania</option><option value="Rhode Island">Rhode Island</option><option value="South Carolina">South Carolina</option><option value="South Dakota">South Dakota</option><option value="Tennessee">Tennessee</option><option value="Texas">Texas</option><option value="Utah">Utah</option><option value="Vermont">Vermont</option><option value="Virginia">Virginia</option><option value="Washington">Washington</option><option value="West Virginia">West Virginia</option><option value="Wisconsin">Wisconsin</option><option value="Wyoming">Wyoming</option></select>
+		</div>
+<div style="padding-top: 25px; padding-bottom: 10px;">
+<input type="submit" value="Find Creatives">
+</div>
+	</div>
+</div>
+
+</div>
+
+
+
+
+<!--
+
+CODE END ABOVE HERE
+-->
+
+	<div class="bottomNavBarContainer"> 
+<div class="bottomNavBox">
+<div class="navIconContainer">
+
+<div class="collabIcon">
+<a class="iconFull" href="#">
+                <img style="width: 30px;" alt="Collaboration" src="img/genre.png"/>
+                <p class="wordsUnderIcon"> Collaborate </p>
+              </a>
+</div>
+
+<div class="CreativesIcon">
+<a class="iconFull" href="#">
+                <img style="width: 30px;" alt="Find Creatives" src="img/discover.png"/>
+                <p class="wordsUnderIcon">Find Creatives </p>
+              </a>
+</div>
+
+<div class="ProfileIcon">
+<a class="iconFull" href="#"> 
+                <img style="width: 30px;" alt="Profile" src="img/account.png"/>
+                <p class="wordsUnderIcon"> My Profile </p>
+              </a>
+</div>
+
+
+
+</div>
+</div>
+
+</div>
+
+<div class="barSeperation"> <!--Just a bar to seperate things --></div>
+
+<div class="Container00">
+	
+<div class="boxContainPeople">
+	
+	<div class="peopleCardOne">
+		
+		<img class="photoOfPerson" src="img/alex5.jpg" style="height: 98%;">
+
+<a href="#"><span class="textOfCard "> <b>Alexus Brown</b></span> </a>
+<div>
+<p class="textAge"> 23 </p>
+</div>
+<p class="textAge"> Model </p>
+<p class="textAge"> Greensboro, NC </p>
+	
+	<input class="hoveringBlue" type="submit" value="Connect">
+	</div>
+
+	<div class="peopleCardTwo">
+		
+		<img class="photoOfPerson" src="img/alex5.jpg" style="height: 98%;">
+
+<a href="#"><span class="textOfCard1"> <b>Alexus Brown</b></span> </a>
+<div>
+<p class="textAge"> 23 </p>
+</div>
+<p class="textAge"> Model </p>
+<p class="textAge"> Greensboro, NC </p>
+	
+	<input class="hoveringWhite" type="submit" value="Connect">
+	</div>
+</div>
+
+<div class="boxContainPeople">
+	
+	<div class="peopleCardOne">
+		<img class="photoOfPerson" src="img/alex5.jpg" style="height: 98%;">
+
+<a href="#"><span class="textOfCard "> <b>Alexus Brown</b></span> </a>
+<div>
+<p class="textAge"> 23 </p>
+</div>
+<p class="textAge"> Model </p>
+<p class="textAge"> Greensboro, NC </p>
+	
+	<input class="hoveringBlue" type="submit" value="Connect">
+	</div>
+
+	<div class="peopleCardTwo">
+		
+		<img class="photoOfPerson" src="img/alex5.jpg" style="height: 98%;">
+
+<a href="#"><span class="textOfCard "> <b>Alexus Brown</b></span> </a>
+<div>
+<p class="textAge"> 23 </p>
+</div>
+<p class="textAge"> Model </p>
+<p class="textAge"> Greensboro, NC </p>
+	
+	<input class="hoveringBlue" type="submit" value="Connect">
+	</div>
+</div>
+
+<div class="boxContainPeople">
+	
+	<div class="peopleCardOne">
+		<img class="photoOfPerson" src="img/alex5.jpg" style="height: 98%;">
+
+<a href="#"><span class="textOfCard "> <b>Alexus Brown</b></span> </a>
+<div>
+<p class="textAge"> 23 </p>
+</div>
+<p class="textAge"> Model </p>
+<p class="textAge"> Greensboro, NC </p>
+	
+	<input class="hoveringBlue" type="submit" value="Connect">
+	</div>
+
+	<div class="peopleCardTwo">
+		<img class="photoOfPerson" src="img/alex5.jpg" style="height: 98%;">
+
+<a href="#"><span class="textOfCard "> <b>Alexus Brown</b></span> </a>
+<div>
+<p class="textAge"> 23 </p>
+</div>
+<p class="textAge"> Model </p>
+<p class="textAge"> Greensboro, NC </p>
+	
+	<input class="hoveringBlue" type="submit" value="Connect">
+	</div>
+</div>
+</div>
+
+<div class="hugespace"> </div>
+
+</body>
+</html>
